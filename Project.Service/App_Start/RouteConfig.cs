@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace ProjektMono
+namespace Project.Service
 {
 	public class RouteConfig
 	{
@@ -16,8 +16,7 @@ namespace ProjektMono
 			routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-				namespaces: new[] { "Project.MVC.Controllers" }
+				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 			);
 		}
 	}
